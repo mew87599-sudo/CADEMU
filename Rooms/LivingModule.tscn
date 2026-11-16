@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://66lvh6ar8ko"]
+
+[ext_resource type="Texture2D" uid="uid://8ixioom8r2s3" path="res://Assets/BackGrounds/livingmodule.jpeg" id="1_ln5l5"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/Hotspot.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/BackArrow.tscn" id="3"]
+
+[node name="LivingModule" type="Node2D" unique_id=1707773768]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1694032852]
+texture_filter = 2
+position = Vector2(320, 180)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_ln5l5")
+
+[node name="ToHall" parent="." unique_id=2018664096 instance=ExtResource("2")]
+position = Vector2(328, 155)
+target_room = "livingmodulehall"
+size = Vector2(78, 103)
+
+[node name="ToRoomC" parent="ToHall" unique_id=969662664 instance=ExtResource("2")]
+position = Vector2(-232, 25)
+scale = Vector2(1.289, 1.327)
+target_room = "livingmodulehallroom"
+size = Vector2(150, 260)
+
+[node name="BackArrow" parent="." unique_id=674533803 instance=ExtResource("3")]

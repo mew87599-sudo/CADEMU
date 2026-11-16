@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://bh1vu3sqj28yp"]
+
+[ext_resource type="Texture2D" uid="uid://dv4u1kwjxlptk" path="res://Assets/BackGrounds/labinside.jpeg" id="1_o432f"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/BackArrow.tscn" id="2_l7wkf"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/Hotspot.tscn" id="3_eoh74"]
+
+[node name="Labinside" type="Sprite2D" unique_id=391378380]
+position = Vector2(318, 181)
+scale = Vector2(0.51, 0.51)
+texture = ExtResource("1_o432f")
+
+[node name="BackArrow" parent="." unique_id=1863467853 instance=ExtResource("2_l7wkf")]
+target_room = "hatch2"
+
+[node name="Hotspot" parent="." unique_id=1999643072 instance=ExtResource("3_eoh74")]
+position = Vector2(-286.2745, -56.862732)
+scale = Vector2(2.375, 3.305)
+target_room = "oxygenroom"
+
+[node name="Hotspot2" parent="." unique_id=894939056 instance=ExtResource("3_eoh74")]
+position = Vector2(327.451, 1.9607849)
+scale = Vector2(2.075, 2.545)
+target_room = "telescope"
+
+[node name="Hotspot3" parent="." unique_id=444816070 instance=ExtResource("3_eoh74")]
+position = Vector2(19.607845, -54.901947)
+scale = Vector2(3.555, 2.365)
+target_room = "labinside2"

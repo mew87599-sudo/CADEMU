@@ -1,0 +1,280 @@
+[gd_scene format=3 uid="uid://ble6lxefhgens"]
+
+[ext_resource type="Script" uid="uid://sk8mkwmv60pt" path="res://Scripts/MapLayout.gd" id="1"]
+[ext_resource type="Script" uid="uid://3cn7h8s177mx" path="res://Scripts/MapRoom.gd" id="2"]
+[ext_resource type="Texture2D" uid="uid://ld0bf2p7mb7m" path="res://Assets/Menus/base_map.png" id="3"]
+
+[node name="MapLayout" type="Control" unique_id=1519426726]
+clip_contents = true
+layout_mode = 3
+anchors_preset = 0
+offset_right = 239.0
+offset_bottom = 290.0
+script = ExtResource("1")
+
+[node name="MapImage" type="TextureRect" parent="." unique_id=1786106117]
+texture_filter = 2
+layout_mode = 0
+offset_right = 239.0
+offset_bottom = 290.0
+mouse_filter = 2
+texture = ExtResource("3")
+
+[node name="Hatch" type="Control" parent="." unique_id=1410339814]
+anchors_preset = 0
+offset_left = 121.0
+offset_top = 1.0
+offset_right = 205.0
+offset_bottom = 21.0
+mouse_filter = 2
+script = ExtResource("2")
+room_id = "hatch"
+also_in_zone = PackedStringArray()
+display_name = "Hatch"
+undim_when_visited = PackedStringArray()
+
+[node name="Hall" type="Control" parent="." unique_id=2120178061]
+anchors_preset = 0
+offset_left = 134.0
+offset_top = 62.0
+offset_right = 193.0
+offset_bottom = 85.0
+mouse_filter = 2
+script = ExtResource("2")
+room_id = "livingmodulehall"
+also_in_zone = PackedStringArray()
+display_name = "Hall"
+undim_when_visited = PackedStringArray()
+
+[node name="YourRoom" type="Control" parent="." unique_id=1183134879]
+anchors_preset = 0
+offset_left = 170.0
+offset_top = 26.0
+offset_right = 209.0
+offset_bottom = 44.0
+mouse_filter = 2
+script = ExtResource("2")
+room_id = "livingmodulehallroom"
+also_in_zone = PackedStringArray()
+display_name = "Your room"
+undim_when_visited = PackedStringArray()
+
+[node name="LivingModule" type="Control" parent="." unique_id=1254598359]
+anchors_preset = 0
+offset_left = 153.0
+offset_top = 22.0
+offset_right = 171.0
+offset_bottom = 62.0
+mouse_filter = 2
+script = ExtResource("2")
+room_id = "livingmodule"
+also_in_zone = PackedStringArray()
+display_name = "Living module"
+undim_when_visited = PackedStringArray()
+
+[node name="Zone05" type="Control" parent="." unique_id=1352166607]
+anchors_preset = 0
+offset_left = 131.0
+offset_top = 92.0
+offset_right = 189.0
+offset_bottom = 118.0
+mouse_filter = 2
+script = ExtResource("2")
+room_id = "commandcenterrighthall"
+also_in_zone = PackedStringArray()
+display_name = "Zone 5"
+undim_when_visited = PackedStringArray()
+
+[node name="Zone06" type="Control" parent="." unique_id=2070621634]
+anchors_preset = 0
+offset_left = 189.0
+offset_top = 92.0
+offset_right = 226.0
+offset_bottom = 164.0
+mouse_filter = 2
+script = ExtResource("2")
+room_id = "commandcenter"
+also_in_zone = PackedStringArray()
+display_name = "Zone 6"
+undim_when_visited = PackedStringArray()
+
+[node name="Zone07" type="Control" parent="." unique_id=1044500731]
+anchors_preset = 0
+offset_left = 131.0
+offset_top = 114.0
+offset_right = 194.0
+offset_bottom = 146.0
+mouse_filter = 2
+script = ExtResource("2")
+also_in_zone = PackedStringArray()
+display_name = "Zone 7"
+undim_when_visited = PackedStringArray()
+
+[node name="Zone08" type="Control" parent="." unique_id=1226226990]
+anchors_preset = 0
+offset_left = 14.0
+offset_top = 115.0
+offset_right = 24.0
+offset_bottom = 147.0
+mouse_filter = 2
+script = ExtResource("2")
+also_in_zone = PackedStringArray()
+display_name = "Zone 8"
+undim_when_visited = PackedStringArray()
+
+[node name="Zone09" type="Control" parent="." unique_id=457385695]
+anchors_preset = 0
+offset_left = 94.0
+offset_top = 119.0
+offset_right = 104.0
+offset_bottom = 145.0
+mouse_filter = 2
+script = ExtResource("2")
+room_id = "hatch3"
+also_in_zone = PackedStringArray()
+display_name = "Zone 9"
+undim_when_visited = PackedStringArray()
+
+[node name="Zone10" type="Control" parent="." unique_id=2034526467]
+anchors_preset = 0
+offset_left = 107.0
+offset_top = 121.0
+offset_right = 130.0
+offset_bottom = 161.0
+mouse_filter = 2
+script = ExtResource("2")
+room_id = "stairs"
+also_in_zone = PackedStringArray()
+display_name = "Zone 10"
+undim_when_visited = PackedStringArray()
+
+[node name="Zone11" type="Control" parent="." unique_id=1782170905]
+anchors_preset = 0
+offset_left = 27.0
+offset_top = 124.0
+offset_right = 89.0
+offset_bottom = 141.0
+mouse_filter = 2
+script = ExtResource("2")
+room_id = "biomodule"
+also_in_zone = PackedStringArray()
+display_name = "Zone 11"
+undim_when_visited = PackedStringArray()
+
+[node name="Zone12" type="Control" parent="." unique_id=93442111]
+anchors_preset = 0
+offset_left = 129.0
+offset_top = 142.0
+offset_right = 190.0
+offset_bottom = 162.0
+mouse_filter = 2
+script = ExtResource("2")
+room_id = "commandcenterlefthall"
+also_in_zone = PackedStringArray()
+display_name = "Zone 12"
+undim_when_visited = PackedStringArray()
+
+[node name="Zone13" type="Control" parent="." unique_id=602482100]
+anchors_preset = 0
+offset_left = 150.0
+offset_top = 166.0
+offset_right = 182.0
+offset_bottom = 184.0
+mouse_filter = 2
+script = ExtResource("2")
+room_id = "hatch2"
+also_in_zone = PackedStringArray()
+display_name = "Zone 13"
+undim_when_visited = PackedStringArray()
+
+[node name="Zone14" type="Control" parent="." unique_id=1551308888]
+anchors_preset = 0
+offset_left = 158.0
+offset_top = 184.0
+offset_right = 175.0
+offset_bottom = 228.0
+mouse_filter = 2
+script = ExtResource("2")
+room_id = "labinside"
+also_in_zone = PackedStringArray()
+display_name = "Zone 14"
+undim_when_visited = PackedStringArray()
+
+[node name="Zone15" type="Control" parent="." unique_id=358011279]
+anchors_preset = 0
+offset_left = 140.0
+offset_top = 194.0
+offset_right = 158.0
+offset_bottom = 212.0
+mouse_filter = 2
+script = ExtResource("2")
+room_id = "telescope"
+also_in_zone = PackedStringArray()
+display_name = "The telescope"
+description = "The radiation shield is here"
+undim_when_visited = PackedStringArray()
+
+[node name="Zone16" type="Control" parent="." unique_id=1581194538]
+anchors_preset = 0
+offset_left = 174.0
+offset_top = 195.0
+offset_right = 193.0
+offset_bottom = 213.0
+mouse_filter = 2
+script = ExtResource("2")
+room_id = "oxygenroom"
+also_in_zone = PackedStringArray()
+display_name = "Oxygen room"
+undim_when_visited = PackedStringArray()
+
+[node name="Zone17" type="Control" parent="." unique_id=217884022]
+anchors_preset = 0
+offset_left = 159.0
+offset_top = 229.0
+offset_right = 175.0
+offset_bottom = 267.0
+mouse_filter = 2
+script = ExtResource("2")
+room_id = "labinside2"
+also_in_zone = PackedStringArray()
+display_name = "Zone 17"
+undim_when_visited = PackedStringArray()
+
+[node name="Zone18" type="Control" parent="." unique_id=344303924]
+anchors_preset = 0
+offset_left = 142.0
+offset_top = 236.0
+offset_right = 159.0
+offset_bottom = 261.0
+mouse_filter = 2
+script = ExtResource("2")
+room_id = "labinside2right"
+also_in_zone = PackedStringArray()
+display_name = "Side lab"
+undim_when_visited = PackedStringArray()
+
+[node name="Zone19" type="Control" parent="." unique_id=1018257136]
+anchors_preset = 0
+offset_left = 175.0
+offset_top = 236.0
+offset_right = 191.0
+offset_bottom = 262.0
+mouse_filter = 2
+script = ExtResource("2")
+room_id = "labinside2left"
+also_in_zone = PackedStringArray()
+display_name = "Analysis department"
+description = "Here you can check the health system of the base and use a microscope for sample analysis."
+undim_when_visited = PackedStringArray()
+
+[node name="Zone20" type="Control" parent="." unique_id=999989841]
+anchors_preset = 0
+offset_left = 150.0
+offset_top = 274.0
+offset_right = 182.0
+offset_bottom = 283.0
+mouse_filter = 2
+script = ExtResource("2")
+also_in_zone = PackedStringArray()
+display_name = "Zone 20"
+undim_when_visited = PackedStringArray()

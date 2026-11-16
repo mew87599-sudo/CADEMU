@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://cy000bhxwci1"]
+
+[ext_resource type="Texture2D" uid="uid://bmowoi0kx7eke" path="res://Assets/BackGrounds/printer.jpeg" id="1_jslqa"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/BackArrow.tscn" id="2_j2qre"]
+
+[node name="Node2D" type="Node2D" unique_id=882958063]
+
+[node name="Printer" type="Sprite2D" parent="." unique_id=1251317713]
+position = Vector2(319.00003, 179)
+scale = Vector2(0.51, 0.51)
+texture = ExtResource("1_jslqa")
+
+[node name="BackArrow" parent="." unique_id=1431931062 instance=ExtResource("2_j2qre")]
+target_room = "labinside2right"

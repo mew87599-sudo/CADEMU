@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://c7xtydw48dywa"]
+
+[ext_resource type="PackedScene" path="res://Rooms/Objects/BackArrow.tscn" id="1_eqchh"]
+[ext_resource type="Texture2D" uid="uid://d07ymn4vsv5pg" path="res://Assets/BackGrounds/labinside2leftinto1.jpeg" id="2_xumob"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/Hotspot.tscn" id="3_ldgds"]
+[ext_resource type="PackedScene" path="res://Rooms/Menus/VitalSignsMenu.tscn" id="4_pqxph"]
+[ext_resource type="PackedScene" path="res://Rooms/Menus/LabComputerMenu.tscn" id="5_lc"]
+
+[node name="Node2D" type="Node2D" unique_id=1377022309]
+
+[node name="BackArrow" parent="." unique_id=490656603 instance=ExtResource("1_eqchh")]
+target_room = "labinside2left"
+
+[node name="Labinside2Leftinto1" type="Sprite2D" parent="." unique_id=1276356521]
+position = Vector2(320, 179)
+scale = Vector2(0.51, 0.51)
+texture = ExtResource("2_xumob")
+
+[node name="Hotspot3" parent="." unique_id=111816198 instance=ExtResource("3_ldgds")]
+position = Vector2(242, 164)
+menu_scene = ExtResource("4_pqxph")
+
+[node name="ComputerHotspot" parent="." instance=ExtResource("3_ldgds")]
+position = Vector2(241, 245)
+size = Vector2(160, 51)
+menu_scene = ExtResource("5_lc")
+required_flag = "mc_briefing"
+locked_message = "The computer has no new data."

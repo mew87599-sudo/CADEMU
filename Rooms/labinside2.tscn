@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://dgpjf7m3ow0su"]
+
+[ext_resource type="Texture2D" uid="uid://bq6gdbkrqu4pt" path="res://Assets/BackGrounds/labinside2.jpeg" id="1_5e0jf"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/BackArrow.tscn" id="2_aseqw"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/Hotspot.tscn" id="3_aseqw"]
+
+[node name="Labinside2" type="Sprite2D" unique_id=2142090668]
+position = Vector2(321, 176)
+scale = Vector2(0.51, 0.51)
+texture = ExtResource("1_5e0jf")
+
+[node name="BackArrow" parent="." unique_id=6626138 instance=ExtResource("2_aseqw")]
+target_room = "labinside"
+
+[node name="Hotspot" parent="." unique_id=1026397609 instance=ExtResource("3_aseqw")]
+position = Vector2(347.05884, 86.27452)
+rotation = 0.7941248
+scale = Vector2(5.765, 4.03)
+target_room = "labinside2right"
+
+[node name="Hotspot2" parent="." unique_id=130100833 instance=ExtResource("3_aseqw")]
+position = Vector2(-362.74515, -58.823517)
+scale = Vector2(5.98, 3.825)
+target_room = "labinside2left"

@@ -1,0 +1,37 @@
+[gd_scene format=3 uid="uid://o5ehhvy76ru0"]
+
+[ext_resource type="Texture2D" uid="uid://vduqoiti4nat" path="res://Assets/BackGrounds/commandcenterlefthall.jpeg" id="1_vxbjg"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/Hotspot.tscn" id="2_22obv"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/BackArrow.tscn" id="3_rud7g"]
+
+[node name="Node2D" type="Node2D" unique_id=255979514]
+
+[node name="Commandcenterlefthall" type="Sprite2D" parent="." unique_id=654673832]
+position = Vector2(320, 179)
+scale = Vector2(0.51, 0.51)
+texture = ExtResource("1_vxbjg")
+
+[node name="Hotspot" parent="." unique_id=1520886593 instance=ExtResource("2_22obv")]
+position = Vector2(483, 180.00002)
+rotation = 0.4712389
+scale = Vector2(1.93, 1)
+target_room = "commandcenterlefthallpc"
+
+[node name="BackArrow" parent="." unique_id=1020407151 instance=ExtResource("3_rud7g")]
+target_room = "commandcenter"
+
+[node name="Hotspot2" parent="." unique_id=360402405 instance=ExtResource("2_22obv")]
+position = Vector2(338.00003, 140)
+rotation = -0.29670596
+target_room = "microscopecloseup"
+
+[node name="Hotspot3" parent="." unique_id=1300140976 instance=ExtResource("2_22obv")]
+position = Vector2(134.00002, 168.00002)
+rotation = -0.33161256
+scale = Vector2(1.54, 4.045)
+target_room = "hatch2"
+
+[node name="Hotspot4" parent="." unique_id=1247206770 instance=ExtResource("2_22obv")]
+position = Vector2(408, 120)
+scale = Vector2(0.25, 0.41)
+target_room = "stairs"

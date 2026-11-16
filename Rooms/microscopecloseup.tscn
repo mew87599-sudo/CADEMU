@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://bukqpekj6xgbx"]
+
+[ext_resource type="Texture2D" uid="uid://c5yohqgq1h84f" path="res://Assets/BackGrounds/microscopecloseup.jpeg" id="1_0rg1s"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/BackArrow.tscn" id="2_illkb"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/Hotspot.tscn" id="3_hs"]
+[ext_resource type="PackedScene" path="res://Rooms/Menus/LabBenchMenu.tscn" id="4_lb"]
+
+[node name="Node2D" type="Node2D" unique_id=1241381130]
+
+[node name="Microscopecloseup" type="Sprite2D" parent="." unique_id=21280434]
+position = Vector2(315.00003, 180)
+scale = Vector2(0.51, 0.51)
+texture = ExtResource("1_0rg1s")
+
+[node name="BackArrow" parent="." unique_id=100083925 instance=ExtResource("2_illkb")]
+target_room = "commandcenterlefthall"
+
+[node name="BenchHotspot" parent="." instance=ExtResource("3_hs")]
+position = Vector2(341, 172)
+size = Vector2(316, 158)
+menu_scene = ExtResource("4_lb")
+required_flag = "samples_retrieved"
+locked_message = "Nothing to examine right now."

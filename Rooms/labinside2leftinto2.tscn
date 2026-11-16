@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bc3oxjgmhy3sd"]
+
+[ext_resource type="Texture2D" uid="uid://ctdfypcg3pyij" path="res://Assets/BackGrounds/labinside2leftinto2.jpeg" id="1_c3d71"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/BackArrow.tscn" id="2_76v4g"]
+
+[node name="Node2D" type="Node2D" unique_id=194824129]
+
+[node name="Labinside2Leftinto2" type="Sprite2D" parent="." unique_id=393761011]
+position = Vector2(266, 209)
+scale = Vector2(0.59, 0.59)
+texture = ExtResource("1_c3d71")
+
+[node name="BackArrow" parent="." unique_id=1577100884 instance=ExtResource("2_76v4g")]
+target_room = "labinside2left"

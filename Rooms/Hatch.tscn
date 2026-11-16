@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://cavqqrw4d4uvs"]
+
+[ext_resource type="Texture2D" uid="uid://cfw500rptr5fq" path="res://Assets/BackGrounds/hatch.jpg" id="1"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/Hotspot.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/BackArrow.tscn" id="3_vopm6"]
+
+[node name="Hatch" type="Node2D" unique_id=83904873]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1283651907]
+texture_filter = 2
+position = Vector2(320, 180)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1")
+
+[node name="Hotspot" parent="." unique_id=723070975 instance=ExtResource("2")]
+position = Vector2(225, 235)
+target_room = "wiring"
+
+[node name="BackArrow" parent="." unique_id=232072089 instance=ExtResource("3_vopm6")]
+target_room = "LivingModule"
+
+[node name="Hotspot2" parent="." unique_id=724184959 instance=ExtResource("2")]
+position = Vector2(331, 202.99998)
+scale = Vector2(1.415, 2.345)
+target_room = "basefrontoutside"

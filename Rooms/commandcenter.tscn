@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://cainnoueelfix"]
+
+[ext_resource type="Texture2D" uid="uid://eyln0usm33eg" path="res://Assets/BackGrounds/commandcenter.jpeg" id="1_n8bdk"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/Hotspot.tscn" id="2_xwlpo"]
+[ext_resource type="PackedScene" path="res://Rooms/Menus/TerminalMenu.tscn" id="4_term"]
+[ext_resource type="Texture2D" uid="uid://ux788jc3fpfu" path="res://Assets/Misc/e11cfa1f-2f3b-46d1-9c1a-08c416d1ed5c.jpeg" id="5_3f7ce"]
+[ext_resource type="PackedScene" uid="uid://dabpc1f0xjcft" path="res://commandcenterrighthall.tscn" id="5_sh47p"]
+
+[node name="Node2D" type="Node2D" unique_id=1961582727]
+position = Vector2(-34, -7)
+
+[node name="Commandcenter" type="Sprite2D" parent="." unique_id=1566447400]
+position = Vector2(353.00003, 187.00002)
+scale = Vector2(0.52, 0.52)
+texture = ExtResource("1_n8bdk")
+
+[node name="Hotspot" parent="." unique_id=1717428486 instance=ExtResource("2_xwlpo")]
+position = Vector2(73, 185)
+scale = Vector2(1, 2.375)
+target_room = "commandcenterlefthall"
+
+[node name="TerminalHotspot" parent="." unique_id=1969839826 instance=ExtResource("2_xwlpo")]
+position = Vector2(335.00003, 160)
+rotation = -0.08726646
+scale = Vector2(0.91, 0.845)
+menu_scene = ExtResource("4_term")
+size = Vector2(117, 83)
+
+[node name="E11Cfa1f2f3b46d19c1a08c416d1Ed5c" type="Sprite2D" parent="." unique_id=29313315]
+position = Vector2(334.57413, 158.71136)
+rotation = -0.07853982
+scale = Vector2(0.06705883, 0.08001884)
+texture = ExtResource("5_3f7ce")
+
+[node name="Hotspot2" parent="." unique_id=1666653577 instance=ExtResource("2_xwlpo")]
+position = Vector2(625, 146)
+scale = Vector2(1, 2.305)
+target_scene = ExtResource("5_sh47p")

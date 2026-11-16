@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://dej6ibyaxr4dn"]
+
+[ext_resource type="Texture2D" uid="uid://cfw500rptr5fq" path="res://Assets/BackGrounds/hatch.jpg" id="1_0kdwo"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/Hotspot.tscn" id="2_mdv0r"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/BackArrow.tscn" id="3_mdv0r"]
+
+[node name="Node2D" type="Node2D" unique_id=1473326772]
+
+[node name="Hatch" type="Sprite2D" parent="." unique_id=1810805469]
+position = Vector2(326, 182)
+scale = Vector2(0.51, 0.51)
+texture = ExtResource("1_0kdwo")
+
+[node name="Hotspot" parent="." unique_id=471266033 instance=ExtResource("2_mdv0r")]
+position = Vector2(338.00003, 195.99998)
+rotation = -0.08726646
+scale = Vector2(1.47, 2.135)
+target_room = "labinside"
+
+[node name="BackArrow" parent="." unique_id=1921261961 instance=ExtResource("3_mdv0r")]
+target_room = "commandcenterlefthall"

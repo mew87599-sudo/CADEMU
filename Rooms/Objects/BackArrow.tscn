@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3]
+
+[ext_resource type="Script" path="res://Scripts/BackArrow.gd" id="1"]
+[ext_resource type="Script" path="res://Scripts/Hotspot.gd" id="2"]
+[ext_resource type="Texture2D" path="res://Assets/Menus/back_arrow.png" id="3"]
+
+[sub_resource type="RectangleShape2D" id="1"]
+resource_local_to_scene = true
+size = Vector2(56, 30)
+
+[node name="BackArrow" type="CanvasLayer"]
+layer = 10
+script = ExtResource("1")
+target_room = "hatch"
+
+[node name="Hotspot" type="Area2D" parent="."]
+position = Vector2(320, 340)
+script = ExtResource("2")
+target_room = "hatch"
+size = Vector2(56, 30)
+
+[node name="Icon" type="Sprite2D" parent="Hotspot"]
+texture = ExtResource("3")
+
+[node name="Shape" type="CollisionShape2D" parent="Hotspot"]
+shape = SubResource("1")

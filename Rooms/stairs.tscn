@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://co0fp6t76s6w5"]
+
+[ext_resource type="Texture2D" uid="uid://dxadrg4ul7j5i" path="res://Assets/BackGrounds/stairs.jpeg" id="1_jqa0u"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/BackArrow.tscn" id="2_yxwht"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/Hotspot.tscn" id="3_v2m4a"]
+
+[node name="Stairs" type="Sprite2D" unique_id=559820072]
+position = Vector2(317.00003, 177.00002)
+scale = Vector2(0.51, 0.51)
+texture = ExtResource("1_jqa0u")
+
+[node name="BackArrow" parent="." unique_id=1230768470 instance=ExtResource("2_yxwht")]
+target_room = "commandcenterlefthall"
+
+[node name="Hotspot" parent="." unique_id=722964224 instance=ExtResource("3_v2m4a")]
+position = Vector2(27.450928, -245.09807)
+target_room = "stairsup"
+size = Vector2(150.51, 163.765)
+
+[node name="Hotspot2" parent="." unique_id=1468356916 instance=ExtResource("3_v2m4a")]
+position = Vector2(-303.92163, 115.68626)
+scale = Vector2(2.985041, 5.908496)
+target_room = "hatch3"

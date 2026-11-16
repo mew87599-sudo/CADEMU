@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://dknf5cgddm0lf"]
+
+[ext_resource type="Texture2D" uid="uid://cre36j8djtq4q" path="res://Assets/BackGrounds/basefrontoutside.jpg" id="1"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/Hotspot.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://Rooms/Menus/AntennaMenu.tscn" id="3_f01o7"]
+[ext_resource type="PackedScene" path="res://Rooms/Menus/PowerCollectionMenu.tscn" id="4_s57kd"]
+
+[node name="BaseFrontOutside" type="Node2D" unique_id=1539884096]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=1894948222]
+texture_filter = 2
+position = Vector2(312.99997, 183)
+scale = Vector2(1.026, 1.026)
+texture = ExtResource("1")
+
+[node name="ToLivingModule" parent="." unique_id=1445736576 instance=ExtResource("2")]
+position = Vector2(313, 238.00002)
+scale = Vector2(1.09, 1.09)
+target_room = "livingmodule"
+size = Vector2(60, 60)
+
+[node name="Hotspot" parent="." unique_id=1457722495 instance=ExtResource("2")]
+position = Vector2(322, 110)
+menu_scene = ExtResource("3_f01o7")
+
+[node name="Hotspot2" parent="." unique_id=526416363 instance=ExtResource("2")]
+position = Vector2(142, 179.99998)
+scale = Vector2(2.275, 0.38)
+menu_scene = ExtResource("4_s57kd")

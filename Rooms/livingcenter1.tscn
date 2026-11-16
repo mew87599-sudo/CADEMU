@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://4g4r5ii4k1e7"]
+
+[ext_resource type="Texture2D" uid="uid://bbuo4s8psbnfn" path="res://Assets/BackGrounds/livingcenter1.jpeg" id="1_ur4cq"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/BackArrow.tscn" id="2_x6bcp"]
+
+[node name="Node2D" type="Node2D" unique_id=332978247]
+
+[node name="Livingcenter1" type="Sprite2D" parent="." unique_id=1089550383]
+position = Vector2(274, 202)
+scale = Vector2(0.57, 0.57)
+texture = ExtResource("1_ur4cq")
+
+[node name="BackArrow" parent="." unique_id=1920654927 instance=ExtResource("2_x6bcp")]
+target_room = "stairsup"

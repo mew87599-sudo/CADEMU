@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://bw53iigcnvl0n"]
+
+[ext_resource type="Texture2D" uid="uid://cfnfkohvmp83k" path="res://Assets/BackGrounds/telescope.jpeg" id="1_degwp"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/BackArrow.tscn" id="2_nn7aa"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/Hotspot.tscn" id="3_v46su"]
+[ext_resource type="PackedScene" path="res://Rooms/Menus/RadiationShieldMenu.tscn" id="4_gk7yd"]
+
+[node name="Node2D" type="Node2D" unique_id=1607123404]
+
+[node name="Telescope" type="Sprite2D" parent="." unique_id=1228540511]
+position = Vector2(322, 180)
+scale = Vector2(0.51, 0.51)
+texture = ExtResource("1_degwp")
+
+[node name="BackArrow" parent="." unique_id=673921518 instance=ExtResource("2_nn7aa")]
+target_room = "labinside"
+
+[node name="Hotspot" parent="." unique_id=2023695760 instance=ExtResource("3_v46su")]
+position = Vector2(334, 211)
+menu_scene = ExtResource("4_gk7yd")

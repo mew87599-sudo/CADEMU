@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dvprokvhma4or"]
+
+[ext_resource type="Texture2D" uid="uid://cdxwyd3qomg1n" path="res://Assets/BackGrounds/oxygenroom.jpeg" id="1_tqali"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/BackArrow.tscn" id="2_oyvkv"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/Hotspot.tscn" id="3_tgnxo"]
+[ext_resource type="PackedScene" path="res://Rooms/Menus/OxygenMenu.tscn" id="4_vftth"]
+
+[node name="Oxygenroom" type="Sprite2D" unique_id=112139031]
+position = Vector2(318.00003, 180)
+scale = Vector2(0.51, 0.51)
+texture = ExtResource("1_tqali")
+
+[node name="BackArrow" parent="." unique_id=20705714 instance=ExtResource("2_oyvkv")]
+target_room = "labinside"
+
+[node name="Hotspot" parent="." unique_id=1022034890 instance=ExtResource("3_tgnxo")]
+position = Vector2(199.99997, 262.74512)
+menu_scene = ExtResource("4_vftth")

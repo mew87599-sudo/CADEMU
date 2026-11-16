@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://blks05tsrsjsa"]
+
+[ext_resource type="Texture2D" uid="uid://cfw500rptr5fq" path="res://Assets/BackGrounds/hatch.jpg" id="1_pxx7y"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/BackArrow.tscn" id="2_osk0u"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/Hotspot.tscn" id="3_084j1"]
+
+[node name="Hatch" type="Sprite2D" unique_id=748224486]
+position = Vector2(321.00003, 181)
+scale = Vector2(0.51, 0.51)
+texture = ExtResource("1_pxx7y")
+
+[node name="BackArrow" parent="." unique_id=51459231 instance=ExtResource("2_osk0u")]
+target_room = "stairs"
+
+[node name="Hotspot" parent="." unique_id=2118211957 instance=ExtResource("3_084j1")]
+position = Vector2(17.646973, 15.686279)
+scale = Vector2(2.83, 4.165)
+target_room = "biomodule"

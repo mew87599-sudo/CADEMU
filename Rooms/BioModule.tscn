@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://mgmqanl2islv"]
+
+[ext_resource type="Texture2D" uid="uid://b38ph2ydfewhp" path="res://Assets/BackGrounds/biomodule.jpg" id="1"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/BackArrow.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/Hotspot.tscn" id="3_pldcu"]
+
+[node name="BioModule" type="Node2D" unique_id=351176504]
+
+[node name="Background" type="Sprite2D" parent="." unique_id=882963921]
+texture_filter = 2
+position = Vector2(320, 180)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1")
+
+[node name="BackArrow" parent="." unique_id=1322436504 instance=ExtResource("2")]
+target_room = "hatch3"
+
+[node name="Hotspot" parent="." unique_id=251437355 instance=ExtResource("3_pldcu")]
+position = Vector2(352, 192)
+scale = Vector2(0.33, 0.42)
+target_room = "plantcloseup"

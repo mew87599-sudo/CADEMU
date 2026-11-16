@@ -1,0 +1,33 @@
+[gd_scene format=3 uid="uid://bji14b2qnt2to"]
+
+[ext_resource type="Texture2D" uid="uid://c4dcaqudc3kta" path="res://Assets/BackGrounds/labinside2left.jpeg" id="1_3wlbt"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/BackArrow.tscn" id="2_qu1l6"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/Hotspot.tscn" id="3_qu1l6"]
+[ext_resource type="PackedScene" path="res://Rooms/Menus/SampleStorageMenu.tscn" id="4_ssm"]
+
+[node name="Node2D" type="Node2D" unique_id=534564576]
+
+[node name="Labinside2Left" type="Sprite2D" parent="." unique_id=1366437054]
+position = Vector2(322.00003, 179)
+scale = Vector2(0.51, 0.51)
+texture = ExtResource("1_3wlbt")
+
+[node name="BackArrow" parent="." unique_id=1823817303 instance=ExtResource("2_qu1l6")]
+target_room = "labinside2"
+
+[node name="Hotspot" parent="." unique_id=464118584 instance=ExtResource("3_qu1l6")]
+position = Vector2(169, 210)
+scale = Vector2(2.205, 1)
+target_room = "labinside2leftinto1"
+
+[node name="Hotspot2" parent="." unique_id=809398271 instance=ExtResource("3_qu1l6")]
+position = Vector2(352, 170)
+scale = Vector2(2.315, 1)
+target_room = "labinside2leftinto2"
+
+[node name="Hotspot3" parent="." unique_id=756061427 instance=ExtResource("3_qu1l6")]
+position = Vector2(567, 197)
+size = Vector2(138, 250)
+menu_scene = ExtResource("4_ssm")
+required_flag = "mc_briefing"
+locked_message = "Nothing to collect right now."

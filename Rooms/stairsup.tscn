@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://b80cn0nkcrm24"]
+
+[ext_resource type="Texture2D" uid="uid://7kibthixqxsl" path="res://Assets/BackGrounds/stairsup.jpeg" id="1_df4yh"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/BackArrow.tscn" id="2_2xyjx"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/Hotspot.tscn" id="3_xnobv"]
+[ext_resource type="Texture2D" uid="uid://bngx0sbcc8m48" path="res://Assets/Misc/door.png" id="4_2xyjx"]
+
+[node name="Stairsup" type="Sprite2D" unique_id=1794912191]
+position = Vector2(318, 181.00002)
+scale = Vector2(0.51, 0.51)
+texture = ExtResource("1_df4yh")
+
+[node name="BackArrow" parent="." unique_id=1524379007 instance=ExtResource("2_2xyjx")]
+target_room = "stairs"
+
+[node name="Hotspot" parent="." unique_id=37711742 instance=ExtResource("3_xnobv")]
+position = Vector2(21.568604, -170.58827)
+scale = Vector2(1.655, 4.035)
+target_room = "livingcenter1"
+
+[node name="Door" type="Sprite2D" parent="." unique_id=2003952722]
+position = Vector2(27.450954, -166.66667)
+scale = Vector2(3.92, 6.47)
+texture = ExtResource("4_2xyjx")

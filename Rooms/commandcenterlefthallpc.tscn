@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://brbtdhtdais1b"]
+
+[ext_resource type="Texture2D" uid="uid://bpd73w3sauukj" path="res://Assets/BackGrounds/commandcenterlefthallpc.jpeg" id="1_pm2du"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/BackArrow.tscn" id="2_ih6jo"]
+
+[node name="Node2D" type="Node2D" unique_id=1567510500]
+
+[node name="Commandcenterlefthallpc" type="Sprite2D" parent="." unique_id=1091875466]
+position = Vector2(317, 182.00002)
+scale = Vector2(0.51, 0.51)
+texture = ExtResource("1_pm2du")
+
+[node name="BackArrow" parent="." unique_id=2002625648 instance=ExtResource("2_ih6jo")]
+position = Vector2(339, 344)
+target_room = "commandcenterlefthall"

@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://bvxciqtjc1rl7"]
+
+[ext_resource type="Texture2D" uid="uid://jl41bcot61wg" path="res://Assets/BackGrounds/labinside2right.jpeg" id="1_b2bin"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/BackArrow.tscn" id="2_t0624"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/Hotspot.tscn" id="3_6iqbb"]
+
+[node name="Node2D" type="Node2D" unique_id=931512207]
+
+[node name="Labinside2Right" type="Sprite2D" parent="." unique_id=1061944085]
+position = Vector2(319, 177)
+scale = Vector2(0.51, 0.51)
+texture = ExtResource("1_b2bin")
+
+[node name="BackArrow" parent="." unique_id=947769583 instance=ExtResource("2_t0624")]
+target_room = "labinside2"
+
+[node name="Hotspot" parent="." unique_id=1714367692 instance=ExtResource("3_6iqbb")]
+position = Vector2(237.99998, 145)
+scale = Vector2(2.01, 2.32)
+target_room = "labinside2rightinto"
+
+[node name="Hotspot2" parent="." unique_id=34715970 instance=ExtResource("3_6iqbb")]
+position = Vector2(483, 296)
+scale = Vector2(2.51, 1.625)
+target_room = "printer"
