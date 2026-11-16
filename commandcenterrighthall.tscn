@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dabpc1f0xjcft"]
+
+[ext_resource type="Texture2D" uid="uid://yno0wimjq5mk" path="res://Assets/BackGrounds/livinmodulerighthall.jpeg" id="1_bmske"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/BackArrow.tscn" id="2_0hd2p"]
+[ext_resource type="PackedScene" path="res://Rooms/Objects/Hotspot.tscn" id="3_82j2b"]
+
+[node name="Node2D" type="Node2D" unique_id=249004845]
+
+[node name="Livinmodulerighthall" type="Sprite2D" parent="." unique_id=969792328]
+position = Vector2(318.00003, 180.00002)
+scale = Vector2(0.51, 0.51)
+texture = ExtResource("1_bmske")
+
+[node name="BackArrow" parent="." unique_id=633892353 instance=ExtResource("2_0hd2p")]
+target_room = "livingmodulehall"
+
+[node name="Hotspot" parent="." unique_id=338819500 instance=ExtResource("3_82j2b")]
+position = Vector2(100.00001, 183.00002)
+scale = Vector2(2.51, 4.515)
+target_room = "commandcenter"

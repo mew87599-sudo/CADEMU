@@ -1,0 +1,55 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[animation]
+
+compatibility/default_parent_skeleton_in_mesh_instance_3d=true
+
+[application]
+
+config/name="Turtle Rooms"
+run/main_scene="res://Rooms/Main.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+
+[autoload]
+
+RoomManager="*res://Scripts/RoomManager.gd"
+PowerGrid="*res://Scripts/PowerGrid.gd"
+Music="*res://Scripts/Music.gd"
+Overlay="*res://Scripts/Overlay.gd"
+Subsystems="*res://Scripts/Subsystems.gd"
+Objectives="*res://Scripts/Objectives.gd"
+Tablet="*res://Scripts/Tablet.gd"
+Story="*res://Scripts/Story.gd"
+Mission="*res://Scripts/Mission.gd"
+DebugMenu="*res://Scripts/DebugMenu.gd"
+
+[display]
+
+window/size/viewport_width=640
+window/size/viewport_height=360
+window/size/mode=3
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
+window/stretch/scale_mode="integer"
+window/size/mode.web=0
+window/stretch/scale_mode.web="fractional"
+
+[dotnet]
+
+project/assembly_name="Turtle Rooms"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+renderer/rendering_method="gl_compatibility"
+2d/snap/snap_2d_transforms_to_pixel=true
+2d/snap/snap_2d_vertices_to_pixel=true
